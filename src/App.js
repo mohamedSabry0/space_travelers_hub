@@ -6,10 +6,9 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-         <Routes>
-          <Route path="/" element={<Header />}>
-          </Route>
-         </Routes>
+        <Routes>
+          <Route path="/" element={<Header />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
