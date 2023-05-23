@@ -23,7 +23,7 @@ const Missions = () => {
         </tr>
       </thead>
       <tbody>
-        {missions.map((mission) => (
+        {missions && missions.map((mission) => (
           <tr key={mission.mission_id}>
             <td className="mission_name_cell">{mission.mission_name}</td>
             <td className="description_cell">{mission.description}</td>
@@ -58,6 +58,7 @@ const Missions = () => {
           </tr>
         ))}
       </tbody>
+
     </table>
   );
 };
