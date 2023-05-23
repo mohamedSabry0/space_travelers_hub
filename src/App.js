@@ -10,9 +10,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />} />
-          <Route path='/rockets' element={<Rockets />} />
-          <Route path='/missions' element={<Missions />} />
-          <Route path='/profile' element={<Profile />} />
+          <Route path="/rockets" element={<Rockets />} />
+          <Route path="/missions" element={<Missions />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </div>
