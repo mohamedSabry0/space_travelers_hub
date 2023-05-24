@@ -1,0 +1,17 @@
+.rockets-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.rockets-list li {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.rockets-list li img {
+  width: 100%;
+  max-width: 200px;
+  margin-right: 20px;
+}
