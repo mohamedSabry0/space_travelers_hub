@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 const Profile = () => {
   const mission = useSelector((state) => state.mission);
 
-  // Check if mission and missions are defined
   const MyMissions = mission && mission.missions ? mission.missions.filter((mission) => mission.reserved === true) : [];
 
   return (
