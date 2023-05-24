@@ -1,22 +1,23 @@
-.container {
+.main-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
 }
 
-.header {
-  padding: 2em;
+.container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  justify-content: flex-start;
+  padding: 0 2rem;
   gap: 10px;
+  width: 50%;
 }
 
-.mission-list {
+.items-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding: 0;
 }
 
 li {
