@@ -1,23 +1,42 @@
-import { createSlice } from '@reduxjs/toolkit';
-import Missions from '../../Components/Missions';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const missionState = {
-  mission: [],
-}
+export const fetchMissions = createAsyncThunk('missions/fetchMissions',
+  async () => {
+    const response = await fetch('https://api.spacexdata.com/v3/missions');
+    const data = await response.json();
+
+    return data;
+  });
+
+const initialState = {
+  missions: [],
+
+};
 const missionSlice = createSlice({
-    name: 'mission',
-    initialState: missionState,
-    reducers: {
-        joinMission: (state, {payload}) => {
-            state.Missions = state.mission.map((mission)) =>{
-                if(mission.mission_id ! == payload) {
-                    return mission;
-                }
-                return {...mission, reserve: true};
-            }
-        }
-    }
-})
+  name: 'missions',
+  initialState,
+  reducers: {
+    joinMission(state, action) {
+      const missionId = action.payload;
+      const mission = state.missions.find((mission) => mission.mission_id === missionId);
+      if (mission) {
+        mission.reserved = true;
+      }
+    },
+    leaveMission(state, action) {
+      const missionId = action.payload;
+      const mission = state.missions.find((mission) => mission.mission_id === missionId);
+      if (mission) {
+        mission.reserved = false;
+      }
+    },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchMissions.fulfilled, (state, action) => {
+      state.missions = action.payload || [];
+    });
+  },
+});
 
-export const {joinMission} = missionSlice.actions;
-export default missionSlice.reducers;
+export const { joinMission, leaveMission } = missionSlice.actions;
+export default missionSlice.reducer;

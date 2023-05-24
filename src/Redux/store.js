@@ -4,16 +4,9 @@ import rocketsReducer from './rockets/rocketsSlice';
 
 const store = configureStore({
   reducer: {
-    mission: missionSlice,
+    missions: missionSlice,
     rockets: rocketsReducer,
   },
 });
 
 export default store;
-
-// export default configureStore({
-//   reducer: {
-//     books: booksReducer,
-//     categories: categoriesReducer,
-//   },
-// });
