@@ -5,7 +5,6 @@ const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
     .then((data) => data.json()).catch((error) => {
       throw new Error(`HTTP error! Error: ${error}`);
     });
-  // console.log(rockets);
   return rockets;
 });
 

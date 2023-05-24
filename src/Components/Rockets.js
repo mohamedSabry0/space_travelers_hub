@@ -21,15 +21,17 @@ const Rockets = () => {
           <li key={id}>
             <img src={flickerImage} alt="rocket" />
             <article>
-              <h2>{name}</h2>
-              { reserved && (<span>Reserved</span>) }
-              <p>{description}</p>
+              <h4>{name}</h4>
+              <p>
+                { reserved && (<span className="reserved-tag">Reserved</span>) }
+                {description}
+              </p>
               <button
                 onClick={() => {
                   dispatch(toggleReserveRocket(id));
                 }}
                 type="button"
-                className="reserve-btn"
+                className={`reserve-btn ${reserved ? 'reserved' : ''}`}
               >
                 {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
               </button>
