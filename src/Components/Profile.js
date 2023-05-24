@@ -3,10 +3,9 @@ import { useSelector } from 'react-redux';
 import '../Style/Profile.css';
 
 const Profile = () => {
-  const mission = useSelector((state) => state.mission);
+  const missions = useSelector((state) => state.missions.missions);
 
-  const Missions = mission && mission.missions ? mission.missions.filter((mission) => mission.reserved === true) : [];
-
+  const Missions = missions.filter((mission) => mission.reserved);
   return (
     <section className="container">
       <main className="header">
