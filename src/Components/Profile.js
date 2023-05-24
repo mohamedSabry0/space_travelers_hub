@@ -2,21 +2,25 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const Profile = () => {
-  const mission = mission = useSelector((state) => state.mission.missions);
+  const mission = useSelector((state) => state.mission);
 
-  const MyMissions = mission.filter((mission) => mission.reserved === true);
+  // Check if mission and missions are defined
+  const MyMissions = mission && mission.missions ? mission.missions.filter((mission) => mission.reserved === true) : [];
+
   return (
     <section>
       <main>
         <article>
-          <h>My Missions</h>
+          <h2>My Missions</h2>
         </article>
         {MyMissions.length === 0 ? (
-          <h4>No Mission</h4>
+          <h4>No Missions</h4>
         ) : (
           <ul>
             {MyMissions.map((missions) => (
-              <h3 key={missions.mission_id}>{missions.mission_name}</h3>
+              <li key={missions.mission_id}>
+                <h3>{missions.mission_name}</h3>
+              </li>
             ))}
           </ul>
         )}
