@@ -5,10 +5,11 @@ import Header from './Components/header';
 import Missions from './Components/Missions';
 import Rockets from './Components/Rockets';
 import Profile from './Components/Profile';
+import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />}>
