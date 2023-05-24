@@ -178,7 +178,7 @@ If you like this project it would be truly appreciated if you give it a ⭐️.
 
 we are grateful for these resources as they were a reason that we obtained a glimpse of their abundance of knowledge:
 
-- [Microverse](https://www.microverse.org/)
+- Microverse
 - [ReactJS Docs](https://reactjs.org/docs)
 - [React Router Docs](https://reactrouter.com/en/main)
 - [Redux toolkit usage guide](https://redux-toolkit.js.org/usage/usage-guide)
