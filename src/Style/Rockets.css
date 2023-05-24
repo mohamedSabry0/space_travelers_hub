@@ -1,0 +1,42 @@
+.rockets-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.rockets-list li {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.rockets-list li img {
+  width: 100%;
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.reserve-btn {
+  background-color: #1181ff;
+  color: #fff;
+  border: 1px solid #1181ff;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.reserve-btn.reserved {
+  background-color: transparent;
+  color: #747c83;
+  border: 1px solid #747c83;
+}
+
+.reserved-tag {
+  background-color: #37aec1;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  padding: 3px;
+  margin-right: 4px;
+  position: relative;
+  top: -2px;
+}

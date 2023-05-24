@@ -1,0 +1,26 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 2rem;
+  gap: 10px;
+  width: 50%;
+}
+
+.items-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+}
+
+li {
+  border: 2px solid rgb(126, 122, 122);
+  padding: 0.5em 0.2em;
+}

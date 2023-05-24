@@ -1,12 +1,119 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <!-- <img src="./app_screenshot.png" alt="logo" width="140"  height="auto" />
+  <br/> -->
 
-## Available Scripts
+  <h3><b>Space Travelers' Hub</b></h3>
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+# 📗 Table of Contents
+
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Space Travelers' Hub ](#-space-travelers-hub-)
+  - [Screenshot ](#screenshot-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+      - [`npm start`](#npm-start)
+    - [Run tests](#run-tests)
+      - [`npm test`](#npm-test)
+  - [👥 Authors ](#-authors-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🔭 Future Features ](#-future-features-)
+  - [Acknowledgements ](#acknowledgements-)
+  - [📝 License ](#-license-)
+
+# 📖 Space Travelers' Hub <a name="about-project"></a>
+
+**Space Travelers' Hub** is a simple app that fetches data from SpaceX API and provide the ability to reserve rockets and join missions. Built with <a href="https://reactjs.org/">React.js</a>
+
+## Screenshot <a name="screenshot"></a>
+
+<div align='center'>
+  <img src="./public/screenshot.png" alt="logo" width="400"  height="auto" />
+    <br/>
+</div>
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[Single Page Application]**
+- **[Reusable Components]**
+- **[Client side routing]**
+- **[Use remote data from API]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://space-travelers-hub-qfz3.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- Node
+- npm
+
+Probably with versions:
+
+- Node >= 19.6.0
+- npm >= 9.4.0
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone git@github.com:mohamedSabry0/space_travelers_hub.git
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd space_travelers_hub
+  npm i
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -14,57 +121,77 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### Run tests
+
+To run tests, run the following command:
+
+#### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- AUTHORS -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 👥 Authors <a name="authors"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+👤 **Mohamed Sabry**
 
-### `npm run eject`
+- GitHub: [@mohamedSabry0](https://github.com/mohamedSabry0)
+- Twitter: [@mohsmh0](https://twitter.com/mohsmh0)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-sabry0/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+👤 **Cimena Kayemba**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- GitHub: [@kayembajonathan](https://github.com/KAYEMBAJONATHAN)
+- LinkedIn: [@kayembajonathan](https://www.linkedin.com/in/cimena-kayemba-b56247236/)
+- Twitter: [@JonathanKa97287](@JonathanKa97287)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- CONTRIBUTING -->
 
-## Learn More
+## 🤝 Contributing <a name="contributing"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions, issues, and feature requests are welcome!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to check the [issues page](https://github.com/mohamedSabry0/space_travelers_hub/issues).
 
-### Code Splitting
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- SUPPORT -->
 
-### Analyzing the Bundle Size
+## ⭐️ Show your support <a name="support"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you like this project it would be truly appreciated if you give it a ⭐️.
 
-### Making a Progressive Web App
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔭 Future Features <a name="future-features"></a>
 
-### Advanced Configuration
+- [ ] **[Preserve actions with local storage]**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Deployment
+## Acknowledgements <a name="acknowledgements"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+we are grateful for these resources as they were a reason that we obtained a glimpse of their abundance of knowledge:
 
-### `npm run build` fails to minify
+- Microverse
+- [ReactJS Docs](https://reactjs.org/docs)
+- [React Router Docs](https://reactrouter.com/en/main)
+- [Redux toolkit usage guide](https://redux-toolkit.js.org/usage/usage-guide)
+- @gitdagray [react_redux_toolkit tutorial](https://www.youtube.com/watch?v=93CR_yURoII)
+- https://codepen.io/ilPas/pen/jYeEyV
+- We also thank other resources that might have slipped from my mind to mention, We really appreciate all the efforts in delivering helpful resources of knowledge.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
