@@ -1,0 +1,25 @@
+.container {
+     display: flex;
+     justify-content: space-between;
+     padding: 0 2rem;
+}
+
+.header {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.mission-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+li {
+    border: 2px solid rgb(126, 122, 122);
+    padding: 0.5em 0.2em
+}
